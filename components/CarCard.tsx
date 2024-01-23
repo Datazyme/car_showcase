@@ -69,7 +69,11 @@ const CarCard = ({ car }: CarCardProps) => {
           ></CustomButton>
         </div>
       </div>
-      <CarDetails></CarDetails>
+      <CarDetails
+        isOpen={isOpen}
+        closeModal={() => setIsOpen(false)}
+        car={car}
+      ></CarDetails>
     </div>
   );
 };
